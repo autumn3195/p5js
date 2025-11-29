@@ -21,14 +21,15 @@ header {
 }
 
 /* 2. 교차 순서 배치 (order 속성) */
-/* 순서: 
+/*
+   목표 순서:
    1번(order: 1) / 4번(order: 3)
    2번(order: 2) / 3번(order: 4)
 */
-.project-1 { order: 1; }
-.project-2 { order: 2; }
-.project-3 { order: 4; } /* 3번을 네 번째에 배치하여 2번 아래에 위치 */
-.project-4 { order: 3; } /* 4번을 세 번째에 배치하여 1번 옆에 위치 */
+.project-1 { order: 1; } /* 1순위: 첫 번째 행, 첫 번째 열 */
+.project-2 { order: 2; } /* 2순위: 두 번째 행, 첫 번째 열 */
+.project-4 { order: 3; } /* 3순위: 첫 번째 행, 두 번째 열 */
+.project-3 { order: 4; } /* 4순위: 두 번째 행, 두 번째 열 */
 
 
 /* 3. 각 프로젝트 카드 스타일 설정 */
